@@ -1,0 +1,161 @@
+/* scroll style */
+html {
+  scroll-behavior: smooth;
+}
+
+/* scrollbar change  */
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: black;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #fabe24;
+  border-radius: 6px;
+}
+/* carouse scroll buttons */
+.slick-prev {
+  left: 10% !important;
+  z-index: 1;
+}
+.slick-next {
+  right: 10% !important;
+  z-index: 1;
+}
+.slick-prev:before,
+.slick-next:before {
+  font-family: none !important;
+  font-size: 55px !important;
+}
+.parallax-window {
+  min-height: 400px;
+  background: transparent;
+}
+/* media query for carousel buttons */
+@media (max-width: 997px) {
+  .slick-next {
+    right: 18% !important;
+  }
+}
+::-moz-selection { /* Code for Firefox */
+  color: white;
+  background: #fabe24;
+}
+/* for sellectio */
+::selection {
+  color: white;
+  background: #fabe24;
+}
+/* for pages header images style */
+.header_fixed_image {
+  background-image: url(/images/img-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+/*  for hover image effect styles */
+.card {
+  position: relative;
+  overflow: hidden;
+}
+.card_content {
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+}
+.card_img {
+  width: 645px;
+}
+.card_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 1s ease;
+}
+.card:hover .card_overlay{
+  opacity: 1;
+}
+.card_human  {
+  position: relative;
+  overflow: hidden;
+}
+.card_text {
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+}
+.card_human_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 18rem;
+  width: 16rem;
+  opacity: 0;
+  transition: 1s ease;
+}
+.card_human:hover .card_human_overlay {
+  opacity: 1;
+}
+/* Contact.js */
+.contact {
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form > h1 {
+  margin-bottom: 30px;
+}
+
+.form > input,
+textarea {
+  padding: 15px;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  background: #fff;
+  font-size: 16px;
+  color: rgb(0, 0, 32);
+  border: 1px solid rgb(196, 183, 0);
+  outline: none;
+}
+
+.form > input:focus,
+textarea:focus {
+  border: 1px solid rgb(196, 183, 0);
+}
+
+.form > textarea {
+  height: 150px;
+  max-width: 400px;
+  min-height: 100px;
+}
+
+.form > label {
+  padding-bottom: 10px;
+  color: rgb(0, 0, 32);
+  font-weight: bold;
+}
+
+.form > button {
+  width: fit-content;
+}
+
+.sidebar {
+  transform: translateX(-100%);
+}
+.sidebar.active {
+  transform: translateX(-11%);
+}

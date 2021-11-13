@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .nav-item {
+      @apply mx-6 py-8 border-b-4 border-transparent font-medium  hover:border-yellow-400  cursor-pointer uppercase hover:opacity-80
+    }
+
+    .nav-item.change-color {
+        @apply mx-6 py-8 border-b-4 border-transparent font-medium  hover:border-yellow-400  cursor-pointer text-[#252525]
+      }
+
+    .nav {
+        @apply bg-gray-400 bg-opacity-50 flex items-center justify-between my-0 mx-0 px-4 lg:py-2 lg:mx-8 lg:my-6 rounded-none lg:rounded-md fixed top-0 left-0 right-0 z-10 transition-all duration-300
+    }
+
+    .nav.another {
+        @apply bg-white bg-opacity-90 lg:mx-0 lg:my-0 transition-all duration-300 rounded-none shadow-md
+    }
+
+    .nav.another > .nav-item  {
+        @apply text-black
+    }
+
+    .nav-list {
+        @apply hidden lg:block
+    }
+
+    .nav-button {
+        @apply px-6 py-2 bg-yellow-400 rounded-md text-lg animate-pulse
+    }
+
+    .active {
+        @apply mx-6 py-8 border-b-4 border-yellow-400 font-medium text-[#252525]
+    }
+
+    .nav-number {
+        @apply text-gray-400 hover:text-yellow-400 mx-3 font-medium
+    }
+
+    .carousel_img {
+        @apply w-full h-screen object-cover relative
+    }
+
+    .carousel_div {
+        @apply absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/3
+    }
+    
+    .carousel_heading {
+        @apply absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/3 text-center text-white uppercase select-none font-roboto
+    }
+
+    .carousel_button {
+        @apply py-5 px-6 lg:px-10 lg:py-6 flex items-center justify-center bg-red-500 hover:bg-red-400 mt-5 rounded-md text-white uppercase animate-pulse transition-all duration-500
+    }
+
+    .sidebar-item {
+        @apply  px-8 lg:px-14
+    }
+
+    .sidebar {
+        @apply bg-[#fabe24] bg-opacity-90 w-56 h-screen lg:w-72 fixed top-0 left-0 z-50  transition-all duration-300
+    }
+
+    .sidebar.active {
+        @apply transform 
+    }
+
+    .first_section-icon {
+        @apply text-8xl sm:text-9xl hover:text-yellow-500 transition-all duration-500 mx-0 animate-pulse
+    }
+
+    .first_section_title {
+        @apply px-3 text-[#252525] text-3xl md:text-4xl font-semibold py-4
+    }
+
+    .second_section_icon {
+        @apply text-8xl border-2 lg:border-4 hover:text-white border-yellow-500 rounded-full p-6 sm:text-9xl hover:bg-yellow-500 transition-all duration-500 mx-0
+    }
+
+    .second_seection_title {
+        @apply px-3 text-[#252525] text-3xl md:text-4xl font-semibold py-4
+    }
+
+    .top {
+        @apply  fixed bottom-8 right-8 sm:right-12 text-white
+    }
+
+    .top.top-hidden {
+        @apply hidden
+    }
+
+    .toolipt {
+        @apply absolute right-20 top-4 py-1 px-8 h-auto rounded-md shadow-md text-[#252525] bg-[#f5f7f9] text-sm transition-all duration-200 scale-0 origin-bottom before:absolute before:top-1.5 before:-right-1  before:h-4 before:w-4 before:bg-[#f5f7f9] before:rotate-45 before:rounded-sm group-hover:scale-100 font-medium
+    }
+
+    .contact-tg {
+        @apply w-[330px] h-[500px] fixed bottom-40 z-0 rounded-md shadow-lg right-10 sm:right-14 bg-white
+    }
+
+    .contact-tg.none {
+        @apply hidden
+    }
+}
